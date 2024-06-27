@@ -167,7 +167,7 @@ const IncomeItemStyled = styled.div`
         }
     }
 
-    @media (min-width: 500px) and (max-width: 700px)
+    @media (min-width: 300px) and (max-width: 700px)
     {
         padding: 0.6rem;
         .icon

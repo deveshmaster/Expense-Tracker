@@ -160,7 +160,7 @@ const NavStyled = styled.nav`
 }
 
 
-@media (min-width: 500px) and (max-width: 900px) 
+@media (min-width: 300px) and (max-width: 900px) 
 {
         padding: 1rem 2rem;
         width: 100%;

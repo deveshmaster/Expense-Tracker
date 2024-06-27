@@ -233,7 +233,7 @@ const DashboardStyled = styled.div`
     }
     }
 
-    @media (min-width: 500px) and (max-width: 700px)
+    @media (min-width: 300px) and (max-width: 700px)
     {
     h1{
         font-size: 1.6rem;

@@ -76,7 +76,7 @@ const ChartStyled = styled.div`
     border-radius: 20px;
     height: 22vw;
 
-    @media (min-width: 500px) and (max-width: 1300px)
+    @media (min-width: 300px) and (max-width: 1300px)
     {
         height: 45vw;
     }

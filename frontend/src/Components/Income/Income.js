@@ -74,7 +74,7 @@ const IncomeStyled = styled.div`
         }
     }
     
-    @media (min-width: 500px) and (max-width: 1000px)
+    @media (min-width: 300px) and (max-width: 1000px)
     {
     .total-income{
         font-size: 3.8vw;
