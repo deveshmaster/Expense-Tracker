@@ -48,6 +48,18 @@ const HistoryStyled = styled.div`
         justify-content: space-between;
         align-items: center;
     }
+    @media (min-width: 300px) and (max-width: 700px)
+    {
+        h2{
+            font-size: 5vw;
+        }
+    }
+    @media (min-width: 700px) and (max-width: 1300px)
+    {
+        h2{
+            font-size: 33px;
+        }
+    }
 `;
 
 export default History

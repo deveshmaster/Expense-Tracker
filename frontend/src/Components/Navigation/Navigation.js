@@ -12,7 +12,7 @@ function Navigation({active, setActive}) {
                 <img src={avatar} alt="" />
                 <div className="text">
                     <h2>USER</h2>
-                    <p className='yourMoney'>Your Money</p>
+                    <p className='yourMoney'>Money</p>
                 </div>
             </div>
             <ul className="menu-items">
@@ -160,7 +160,7 @@ const NavStyled = styled.nav`
 }
 
 
-@media (min-width: 300px) and (max-width: 900px) 
+@media (min-width: 500px) and (max-width: 900px) 
 {
         padding: 1rem 2rem;
         width: 100%;
@@ -199,6 +199,55 @@ const NavStyled = styled.nav`
     p,h2
     {
         font-size: 2vw;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) 
+{
+        padding: 1rem 2rem;
+        width: 100%;
+        height: 6%;
+        dispaly: flex;
+        flex-direction: row;
+        // justify-content: center;
+        align-items: center;
+
+    .user-con
+    {
+        padding: auto 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        img{
+            display: none;
+        }
+    }
+
+    .menu-items, .bottom-nav
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:1rem;
+        li{
+            text-align: right;
+            font-size: 2.5vw;
+        }
+        i{
+            display: none;
+        }
+    }
+
+    p,h2
+    {
+        font-size: 1.8vw;
+    }
+
+    .active{
+        color: rgba(34, 34, 96, 1) !important;
+        &::before{
+            display: none;
+        }
     }
 }
     

@@ -78,7 +78,6 @@ function Dashboard() {
         </DashboardStyled>
     )
 }
-
 const DashboardStyled = styled.div`
     .stats-con{
         margin: 1rem;
@@ -215,7 +214,7 @@ const DashboardStyled = styled.div`
         {
             display: grid;
             width: 100%;
-            grid-template-columns: 5fr 5fr;
+            grid-template-columns: 1fr;
             gap: 4rem;
             .history-2{
                 display: flex;
@@ -233,25 +232,33 @@ const DashboardStyled = styled.div`
     }
     }
 
+
+
     @media (min-width: 300px) and (max-width: 700px)
     {
+    margin: 0;
     h1{
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     .stats-con
     {
+        margin: 0;
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center; 
         .chart-con{
             width: 100%;
             .amount-con{
-                .income,.expense, .balance{
-                    p{
-                        font-size: 3.5vw;
-                    }
-                    h2{
-                        font-size: 1.2rem;
+                display: inline-block;
+                height: 30%;
+                .balance{
+                    display: block;
+                    align-itmes : flex-end;
+                }
+                .income,.expense,.balance{
+                    h2,p{
+                        font-size: 1rem;
                     }
                 }
             }
@@ -261,8 +268,8 @@ const DashboardStyled = styled.div`
         {
             display: grid;
             width: 100%;
-            grid-template-columns: 5fr 5fr;
-            gap: 3rem;
+            grid-template-columns: 1fr;
+            gap: 1rem;
             .history-2{
                 display: flex;
                 flex-direction: column;
@@ -270,16 +277,16 @@ const DashboardStyled = styled.div`
                 padding-top: 1rem;
             }
             .salary-title{
-                font-size: 1rem;
+                font-size: 3.2vw;
                 span{
-                    font-size: 1.2rem;
+                    font-size: 4.2vw;
                 }
             }
             .salary-item{
                 padding: 0.8rem;
                 p{
                     font-weight: 300;
-                    font-size: 1.2rem;
+                    font-size: 3.2vw;
                 }
             }
         }

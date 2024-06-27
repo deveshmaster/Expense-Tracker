@@ -75,7 +75,7 @@ function IncomeItem({
                     <div className="text">
                         <p>{dollar} {amount}</p>
                         <p>{calender} {dateFormat(date)}</p>
-                        <p>
+                        <p className='des'>
                             {comment}
                             {description}
                         </p>
@@ -97,6 +97,7 @@ function IncomeItem({
         </IncomeItemStyled>
     )
 }
+
 
 const IncomeItemStyled = styled.div`
     background: #FCF6F9;
@@ -167,7 +168,7 @@ const IncomeItemStyled = styled.div`
         }
     }
 
-    @media (min-width: 300px) and (max-width: 700px)
+    @media (min-width: 500px) and (max-width: 700px)
     {
         padding: 0.6rem;
         .icon
@@ -208,6 +209,54 @@ const IncomeItemStyled = styled.div`
             }
         } 
     }
-`;
 
+
+    @media (min-width: 300px) and (max-width: 500px)
+    {
+        padding: 0.6rem;
+        .icon
+        {
+            width: 40px;
+            height: 40px;
+            i{
+                font-size: 1rem;
+            }
+        }   
+
+        .content
+        {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+            h5{
+                font-size: 1rem;
+            }
+
+            .inner-content
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0rem;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        font-size: 0.8rem;
+                        gap: 0.2rem;
+                        color: var(--primary-color);
+                    }
+
+                    .des{
+                        display: none;
+                    }
+                }
+            }
+        } 
+    }
+`;
 export default IncomeItem

@@ -143,5 +143,22 @@ const ExpenseFormStyled = styled.form`
             }
         }
     }
+
+    @media (min-width:300px) and (max-width: 700px)
+    {
+        gap: 1rem;
+
+        input, textarea, select{
+            font-size: inherit;
+            padding: .5rem 0.5rem;
+            resize: none;
+            &::placeholder{
+                color: rgba(34, 34, 96, 0.4);
+            }
+        }   
+        texarea{
+            max-width: 100%;
+        }
+    }
 `;
 export default ExpenseForm
