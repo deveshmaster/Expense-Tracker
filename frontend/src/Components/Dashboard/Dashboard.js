@@ -45,9 +45,7 @@ function Dashboard() {
                         </div>
                     </div>
                     <div className="history-con">
-                        <div>
-                            <History />
-                        </div>
+                        
                         <div className='history-2'>
                         <div className='Sal'>
                         <h2 className="salary-title">Min <span>Salary</span>Max</h2>
@@ -71,6 +69,9 @@ function Dashboard() {
                             </p>
                         </div>
                         </div>
+                        </div>
+                        <div>
+                            <History />
                         </div>
                     </div>
                 </div>
