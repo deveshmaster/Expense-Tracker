@@ -138,6 +138,9 @@ const NavStyled = styled.nav`
             display: none;
         }
     }
+    .text{
+        display: none;
+    }
 
     .menu-items, .bottom-nav
     {
